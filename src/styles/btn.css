@@ -1,0 +1,15 @@
+.btn {
+    background: transparent;
+    border: 1.8px solid #FFF;
+    padding: 1rem;
+    color: #FFF;
+    border-radius: 9.14px;
+    font-size: 1.1rem;
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+        box-shadow:
+    inset 0 0 10px 1px rgba(255, 255, 255, 0.25),
+    0 8px 25px rgba(120, 80, 180, 0.25);
+}

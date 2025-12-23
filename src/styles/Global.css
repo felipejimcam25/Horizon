@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Helvetica";
+    src: url(./assets/fonts/helvetica/Helvetica.ttf) format('truetype');
+    font-style: normal;
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
+body {
+    font-family: 'Helvetica';
+    font-size: 16px;
+}
+
+.container {
+    padding: 1.5rem 1rem;
+}
+
+
+:root {
+    --grey-color: #A4A4A4;
+    --purple-color: #10002B;
+    --white-color: #EFEFEF;
+    --light-purple-color: #E0AAFF;
+    --black-color: #000;
+
+}
+
