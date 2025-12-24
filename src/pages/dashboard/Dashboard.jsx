@@ -15,6 +15,8 @@ import "../../styles/Global.css";
 import "../../styles/Dashboard.css";
 import logo from "../../assets/logo/Logo.png";
 import BalanceCard from "../../components/ui/BalanceCard";
+import Header from "../../components/layout/Header";
+
 
 
 /*
@@ -30,13 +32,16 @@ export function Dashboard () {
     const balance = userBalance();
 
     return (
-        <section className="dashboard container">
-            <article className="headContent">
+        <>
+        
+        <section className="dashboard">
+            <Header />
+            <article className="headContent container">
                 <span className="headTitle">Welcome to <img src={logo} alt="" />!</span>
                 <span className="headSubtitle">With Horizon, your goals have no limits</span>
             </article>
 
-            <article className="balanceBody">
+            <article className="balanceBody container">
                 <BalanceCard 
                 title="Total Balance"
                 icon={faChartLine}
@@ -47,7 +52,7 @@ export function Dashboard () {
                 /> 
 
                 <BalanceCard 
-                title="Total Balance"
+                title="Spend"
                 icon={faDollarSign}
                 value={formatMoney(balance)}
                 percentage={10}
@@ -56,6 +61,7 @@ export function Dashboard () {
                 /> 
             </article>
         </section>
+        </>
 
     )
 }

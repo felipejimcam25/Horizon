@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowTrendUp } from "@fortawesome/free-solid-svg-icons";
-import { faArrowTrendDown } from "@fortawesome/free-solid-svg-icons";
+import { faArrowTrendUp, faArrowTrendDown } from "@fortawesome/free-solid-svg-icons";
 
 import { Link } from "react-router-dom"; 
 
