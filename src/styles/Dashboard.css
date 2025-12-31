@@ -1,18 +1,6 @@
 
 
 .dashboard {
-    background:
-    radial-gradient(
-        circle at top right,
-        rgba(155, 89, 255, 0.35),
-        transparent 60%
-    ),
-    radial-gradient(
-        circle at bottom left,
-        rgba(120, 60, 200, 0.25),
-        transparent 65%
-    ),
-    #000;
     height: 100dvh;
     display: flex;
     flex-direction: column;
@@ -159,4 +147,15 @@
     align-items: center;
     color: rgb(109, 0, 0);
     gap: .3rem;
+}
+
+@media screen and (max-width: 380px) {
+    .headTitle {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2.3rem;
+    color: #EFEFEF;
+    font-weight: 500;
+    }
 }

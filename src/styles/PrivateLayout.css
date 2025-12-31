@@ -1,0 +1,14 @@
+.privateLayout {
+    background:
+    radial-gradient(
+        circle at top right,
+        rgba(155, 89, 255, 0.35),
+        transparent 60%
+    ),
+    radial-gradient(
+        circle at bottom left,
+        rgba(120, 60, 200, 0.25),
+        transparent 65%
+    ),
+    #000;
+}

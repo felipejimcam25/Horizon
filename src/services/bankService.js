@@ -9,6 +9,5 @@ export function formatMoney (value) {
 
 export function userBalance () {
     const user = getSession();
-
-    return user.amount;
+    return user.balance;
 }

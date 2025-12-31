@@ -2,20 +2,22 @@ import { useNavigate, Link } from "react-router-dom"
 import Button from "../../components/ui/Button"
 import "../../styles/Login.css"
 import { useState } from "react";
-import { login } from "../../services/authService";
+import { useAuth } from "../../context/useAuth";
+import { authLogin } from "../../services/authService";
 
 
 export default function Login () {
     const navigate = useNavigate();
     const [ username, setUsername ] = useState();
     const [ password, setPasword ] = useState();
+    const { login } = useAuth();
 
     function handleLogin (e) {
         e.preventDefault();
         
         try {
-            const result = login(username, password);
-            console.log(result);
+            const user = authLogin(username, password);
+            login(user);
             
             navigate('/dashboard');
         } catch (err) {

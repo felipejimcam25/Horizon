@@ -100,7 +100,50 @@
     font-weight: 700;
 } 
 
+.dropdown {
+    gap: 0;
+}
 
 .navLink.active > .linkIcon {
     color: #000000;
 }
+
+
+/* MAIN NAV STYLES */
+
+.mainNav {
+        background: linear-gradient(
+        to right,
+        #1c1c1c 0%,
+        #0a0a0a 60%,
+        #000000 100%
+    );
+    padding: 1rem 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.mainList {
+    display: flex;
+    justify-content: space-between;
+}
+.mainLink {
+    color: var(--grey-color);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.mainLinkIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+    stroke: var(--grey-color);
+}
+
+
+
+
+/* MAIN NAV STYLES */
+

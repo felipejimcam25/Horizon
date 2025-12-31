@@ -32,14 +32,14 @@ export default function SignUp () {
             alert('Passwords do not match');
             return;
         }
-        const amount = 100000;
+        const balance = 100000;
 
         const newUser = {
             name,
             email,
             username,
             password, 
-            amount
+            balance
         }
         users.push(newUser)
         storage.set(STORAGE_KEY, users );

@@ -15,7 +15,7 @@ import "../../styles/Global.css";
 import "../../styles/Dashboard.css";
 import logo from "../../assets/logo/Logo.png";
 import BalanceCard from "../../components/ui/BalanceCard";
-import Header from "../../components/layout/Header";
+
 
 
 
@@ -35,7 +35,6 @@ export function Dashboard () {
         <>
         
         <section className="dashboard">
-            <Header />
             <article className="headContent container">
                 <span className="headTitle">Welcome to <img src={logo} alt="" />!</span>
                 <span className="headSubtitle">With Horizon, your goals have no limits</span>

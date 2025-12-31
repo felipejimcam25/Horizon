@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SideNavOption from "../ui/SideNavOption";
-import { faUser, faBullseye, faBell, faXmark, faGear, faArrowRightFromBracket, faBars } from "@fortawesome/free-solid-svg-icons";
+import { faUser, faBullseye, faBell, faXmark, faGear, faArrowRightFromBracket, faBars, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import "../../styles/Nav.css";
 
 
@@ -62,11 +62,23 @@ export default function SlideNav () {
                         />
                 </div>
 
-                <div className="menuControl">
-                    <li className="menuText">Account Management</li>
-                    <li className="option">
-                    
-                    </li>
+                <div className="menuControl dropdown">
+                    <li className="menuText">Account Management <FontAwesomeIcon icon={faAngleDown} /></li>
+                    <SideNavOption 
+                        link={"/balance"}
+                        icon={""}
+                        text={"Balance"}
+                    />
+                    <SideNavOption 
+                        link={"/spend"}
+                        icon={""}
+                        text={"Spend"}
+                    />
+                    <SideNavOption 
+                        link={"/saving"}
+                        icon={""}
+                        text={"Saving"}
+                    />
                 </div>
 
                 <div className="menuControl">

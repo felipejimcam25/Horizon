@@ -1,6 +1,6 @@
 import { storage } from "./storageService";
 
-export function login (username, password) {
+export function authLogin (username, password) {
     const users = storage.get("users");
     
 
@@ -19,8 +19,6 @@ export function getSession() {
     return storage.get('session');
 }
 
-export function logOut () {
-    storage.remove('session');
-}
+
 
 
