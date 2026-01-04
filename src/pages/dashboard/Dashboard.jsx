@@ -1,20 +1,13 @@
-
-import { userBalance } from "../../services/bankService";
-
 import { formatMoney } from "../../services/bankService";
-
+import { userBalance } from "../../services/bankService";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-import { Link } from "react-router-dom";
-
-import { faChartLine } from "@fortawesome/free-solid-svg-icons";
-import { faDollarSign } from "@fortawesome/free-solid-svg-icons";
-
+import { faChartLine, faDollarSign } from "@fortawesome/free-solid-svg-icons";
 
 import "../../styles/Global.css";
 import "../../styles/Dashboard.css";
 import logo from "../../assets/logo/Logo.png";
 import BalanceCard from "../../components/ui/BalanceCard";
+import PaymentMethod from "../../components/ui/PaymentMethods"
 
 
 
@@ -59,7 +52,9 @@ export function Dashboard () {
                 link="/spend"
                 /> 
             </article>
+            <PaymentMethod />
         </section>
+
         </>
 
     )

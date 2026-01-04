@@ -24,7 +24,7 @@
     top: 0%;
     opacity: 0;
     visibility: hidden;
-    z-index: 100;
+    z-index: 10000;
     transition: all .5s ease;
 }
 
@@ -33,6 +33,7 @@
     opacity: 1;
     box-shadow: 0 0 0 100vmax rgba(0,0,0,0.5);
     visibility: visible;
+    z-index: 1000;
 }
 
 
@@ -122,6 +123,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 100;
 }
 
 .mainList {
@@ -140,6 +142,14 @@
     width: 1.5rem;
     height: 1.5rem;
     stroke: var(--grey-color);
+}
+
+.mainLink.active{
+    color: #FFF;
+}
+
+.mainLink.active .mainLinkIcon {
+    color: #FFF;
 }
 
 

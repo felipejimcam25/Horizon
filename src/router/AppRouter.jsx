@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import SplashScreen from '../components/SplashScreen';
 import Login from "../pages/auth/Login";
 import { Dashboard } from "../pages/dashboard/Dashboard";
+import ChatAI from "../pages/dashboard/Chat";
 import SignUp from "../pages/auth/SignUp";
 import ProtectedRoute from "./ProtectedRoute";
 import PrivateLayout from "../components/layout/PrivateLayout";
@@ -16,6 +17,7 @@ export default function AppRouter () {
 
             <Route element={ <PrivateLayout /> }>
                 <Route path="/dashboard" element={ <Dashboard/> } />
+                <Route path="/chat" element={ <ChatAI /> } />
             </Route>
 
             <Route path="/balance" element={

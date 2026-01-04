@@ -4,6 +4,8 @@ import Header from "../layout/Header"
 import { Navigate, Outlet } from "react-router-dom";
 
 import "../../styles/PrivateLayout.css"
+import ChatAI from "../../pages/dashboard/Chat";
+
 
 export default function PrivateLayout () {
     const { isAuthenticated } = useAuth();
@@ -17,7 +19,6 @@ export default function PrivateLayout () {
             <MainNav />
 
             <main>
-
             <Outlet/>
             </main>
             

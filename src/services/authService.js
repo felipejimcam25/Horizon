@@ -1,5 +1,7 @@
 import { storage } from "./storageService";
 
+const SESSION_KEY = 'session';
+
 export function authLogin (username, password) {
     const users = storage.get("users");
     
@@ -17,6 +19,10 @@ export function authLogin (username, password) {
 
 export function getSession() {
     return storage.get('session');
+}
+
+export function setSession (session) {
+    storage.set(SESSION_KEY, session)
 }
 
 

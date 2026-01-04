@@ -1,9 +1,11 @@
 
 
 .dashboard {
-    height: 100dvh;
+    height: auto;
     display: flex;
     flex-direction: column;
+    padding-top: 3.8rem;
+    padding-bottom: 2rem;
 }
 
 .headContent {
@@ -148,6 +150,135 @@
     color: rgb(109, 0, 0);
     gap: .3rem;
 }
+
+
+/* PAYMENT METHODS STYLES */
+
+.paymentMethods {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.paymentTitleWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+.paymentTitle {
+    color: #EFEFEF;
+    font-family: 'Helvetica';
+    font-weight: 100;
+}
+
+.cardImage {
+    width: 279px;
+    border-radius: 1rem;
+}
+
+.cards-stack {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    perspective: 1000px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.cardImage {
+    position: absolute;
+    top: 0;
+    margin: auto;
+    transform-style: preserve-3d;
+    transition: transform .5s ease;
+}
+
+.card-top {
+    transform: translateY(0px) rotateX(50deg) rotateZ(-30deg);
+    z-index: 3;
+}
+
+.card-middle {
+    transform: translateY(50px) rotateX(50deg) rotateZ(-40deg);
+    opacity: 0.6;
+    z-index: 2;
+    top: 30px;
+
+}
+
+.card-bottom {
+    transform: translateY(90px) rotateX(50deg) rotateZ(-50deg);
+    opacity: 0.8;
+    z-index: 1;
+    top: 50px;
+
+}
+
+/* PAYMENT METHODS STYLES */
+
+/* CHAT AI PATH STYLES */
+.chatPath {
+    width: 100%;
+    height: 100vh;
+    background:
+    radial-gradient(
+        circle at top right,
+        rgba(155, 89, 255, 0.35),
+        transparent 60%
+    ),
+    radial-gradient(
+        circle at bottom left,
+        rgba(120, 60, 200, 0.25),
+        transparent 65%
+    ),
+    #FFF;
+}
+
+.chatContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputChat {
+    position: fixed;
+    bottom: 15%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.inputChat input {
+    margin: 0 auto;
+    position: relative;
+    width: 95%;
+    color: var(--black-color);
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+    border: none;
+    padding: 1rem;
+}
+
+.inputChat input::placeholder {
+    color: var(--black-color);
+}
+
+.inputChat label {
+    position: fixed;
+    z-index: 1;
+    right: 5%;
+    color: var(--black-color);
+}
+
+/* CHAT AI PATH STYLES */
+
+
 
 @media screen and (max-width: 380px) {
     .headTitle {
